@@ -116,7 +116,7 @@ namespace Banks.Test
             bank.AddClient(client);
             client.Accounts[0].UpdateBalance(100000);
             Assert.AreEqual(100000, client.Accounts[0].Balance);
-            Assert.AreEqual(100300, bank.ViewBalanceInTime(dateViewer, client.Accounts[0]));
+            Assert.AreEqual(100270, bank.ViewBalanceInTime(dateViewer, client.Accounts[0]));
         }
     }
 }
